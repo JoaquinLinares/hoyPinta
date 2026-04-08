@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,700;1,9..144,300&family=DM+Sans:wght@400;500&display=swap");
+
+:root {
+  /* Colores principales */
+  --color-accent: #d85a30;
+  --color-accent-dark: #993c1d;
+  --color-accent-light: #faece7;
+
+  /* Fondos */
+  --color-bg: #faf8f5;
+  --color-bg-card: #ffffff;
+  --color-bg-surface: #f3f0eb;
+
+  /* Texto */
+  --color-text-primary: #1a1814;
+  --color-text-secondary: #6b6560;
+  --color-text-tertiary: #a8a09a;
+
+  /* Bordes */
+  --color-border: rgba(26, 24, 20, 0.1);
+  --color-border-strong: rgba(26, 24, 20, 0.2);
+
+  /* Tags */
+  --color-tag-carne-bg: #faece7;
+  --color-tag-carne-text: #7a2e12;
+  --color-tag-pollo-bg: #fdf3e0;
+  --color-tag-pollo-text: #7a5212;
+  --color-tag-verdura-bg: #eaf3de;
+  --color-tag-verdura-text: #2d5a0e;
+  --color-tag-pasta-bg: #eeedfe;
+  --color-tag-pasta-text: #3c3489;
+  --color-tag-huevo-bg: #fef9e6;
+  --color-tag-huevo-text: #7a6212;
+  --color-tag-rapido-bg: #e6f1fb;
+  --color-tag-rapido-text: #185fa5;
+  --color-tag-lento-bg: #faeeda;
+  --color-tag-lento-text: #854f0b;
+  --color-tag-simple-bg: #f1efe8;
+  --color-tag-simple-text: #5f5e5a;
+  --color-tag-elaborado-bg: #eeedfe;
+  --color-tag-elaborado-text: #534ab7;
+  --color-tag-barato-bg: #eaf3de;
+  --color-tag-barato-text: #27500a;
+  --color-tag-caro-bg: #fbeaf0;
+  --color-tag-caro-text: #993556;
+
+  /* Tipografía */
+  --font-display: "Fraunces", Georgia, serif;
+  --font-body: "DM Sans", system-ui, sans-serif;
+
+  /* Espaciado */
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-pill: 999px;
+  
+  --shadow-card: 0 1px 3px rgba(26, 24, 20, 0.06), 0 4px 16px rgba(26, 24, 20, 0.04);
+  --shadow-btn: 0 2px 8px rgba(216, 90, 48, 0.35);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--color-bg);
+  color: var(--color-text-primary);
+  line-height: 1.6;
+  min-height: 100vh;
+}
+
+.app-container {
+  min-height: 100vh;
+  background-color: var(--color-bg);
+  padding: 0 1rem 3rem;
+}
+
+.app-inner {
+  max-width: 480px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding-top: 1.5rem;
+}
+
+@media (max-width: 360px) {
+  .app-inner {
+    gap: 0.75rem;
+    padding-top: 1rem;
+  }
+}

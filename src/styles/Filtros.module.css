@@ -1,0 +1,75 @@
+.card {
+  background: var(--color-bg-surface);
+  border-radius: var(--radius-lg);
+  padding: 1rem 1.125rem;
+  border: 1px solid var(--color-border);
+}
+
+.titulo {
+  font-size: 0.7rem;
+  font-weight: 500;
+  color: var(--color-text-tertiary);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 0.75rem;
+}
+
+.grupo {
+  margin-bottom: 0.875rem;
+}
+
+.grupo:last-child {
+  margin-bottom: 0;
+}
+
+.grupoLabel {
+  display: block;
+  font-size: 0.8rem;
+  color: var(--color-text-secondary);
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+.pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.375rem;
+}
+
+.pill {
+  padding: 0.3rem 0.75rem;
+  border-radius: var(--radius-pill);
+  font-size: 0.8rem;
+  font-family: var(--font-body);
+  border: 1px solid var(--color-border-strong);
+  background: var(--color-bg-card);
+  color: var(--color-text-primary);
+  cursor: pointer;
+  transition: background 0.15s ease, border-color 0.15s ease, color 0.15s ease,
+    transform 0.1s ease;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.pill:hover:not(.pillActivo) {
+  background: var(--color-bg-surface);
+  border-color: var(--color-accent);
+}
+
+.pill:active {
+  transform: scale(0.97);
+}
+
+.pillActivo {
+  background: var(--color-accent);
+  border-color: var(--color-accent);
+  color: #ffffff;
+  font-weight: 500;
+}
+
+@media (max-width: 360px) {
+  .pill {
+    font-size: 0.75rem;
+    padding: 0.25rem 0.625rem;
+  }
+}
