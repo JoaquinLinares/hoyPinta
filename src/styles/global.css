@@ -1,0 +1,71 @@
+/* src/styles/global.css */
+
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,700;1,9..144,400&family=DM+Sans:opsz,wght@9..40,400;9..40,500&display=swap");
+
+:root {
+  --accent:        #d85a30;
+  --accent-dark:   #993c1d;
+  --accent-light:  #faece7;
+  --accent-mid:    #f0a882;
+
+  --bg:            #faf8f5;
+  --bg-card:       #ffffff;
+  --bg-surface:    #f3f0eb;
+  --bg-surface2:   #ede9e2;
+
+  --text-primary:   #1a1814;
+  --text-secondary: #6b6560;
+  --text-tertiary:  #a8a09a;
+
+  --border:        rgba(26,24,20,0.10);
+  --border-strong: rgba(26,24,20,0.18);
+
+  --green-bg:  #eaf3de; --green-text: #2d5a0e;
+  --blue-bg:   #e6f1fb; --blue-text:  #185fa5;
+  --amber-bg:  #faeeda; --amber-text: #854f0b;
+  --purple-bg: #eeedfe; --purple-text:#3c3489;
+  --rose-bg:   #fbeaf0; --rose-text:  #993556;
+  --teal-bg:   #e1f5ee; --teal-text:  #0f6e56;
+
+  --font-display: "Fraunces", Georgia, serif;
+  --font-body:    "DM Sans", system-ui, sans-serif;
+
+  --r-sm: 8px;
+  --r-md: 12px;
+  --r-lg: 16px;
+  --r-pill: 999px;
+
+  --shadow-card: 0 1px 3px rgba(26,24,20,0.05), 0 4px 16px rgba(26,24,20,0.04);
+  --shadow-btn:  0 2px 10px rgba(216,90,48,0.30);
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { font-size: 16px; -webkit-text-size-adjust: 100%; }
+
+body {
+  font-family: var(--font-body);
+  background: var(--bg);
+  color: var(--text-primary);
+  line-height: 1.6;
+  min-height: 100vh;
+}
+
+.app-wrap {
+  min-height: 100vh;
+  background: var(--bg);
+  padding: 0 1rem 4rem;
+}
+
+.app-inner {
+  max-width: 520px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding-top: 1.5rem;
+}
+
+@media (max-width: 360px) {
+  .app-inner { gap: 0.75rem; padding-top: 1rem; }
+}

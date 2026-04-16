@@ -1,0 +1,45 @@
+/* src/styles/ResultadoCard.module.css */
+.card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--r-lg);
+  padding: 1.25rem;
+  min-height: 130px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow: var(--shadow-card);
+  transition: border-color 0.2s;
+}
+.cardActivo { border-color: var(--border-strong); }
+.vacio { text-align: center; color: var(--text-tertiary); font-size: 0.9rem; line-height: 1.6; }
+.vacioEmoji { display: block; font-size: 1.5rem; margin-bottom: 0.5rem; }
+.header { display: flex; align-items: center; gap: 0.75rem; margin-bottom: 0.75rem; }
+.emoji { font-size: 1.875rem; flex-shrink: 0; }
+.nombre {
+  font-family: var(--font-display);
+  font-size: 1.375rem;
+  font-weight: 500;
+  color: var(--text-primary);
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+}
+.tags { display: flex; flex-wrap: wrap; gap: 0.35rem; margin-bottom: 0.75rem; }
+.tag { font-size: 0.7rem; font-weight: 500; padding: 0.18rem 0.55rem; border-radius: var(--r-sm); }
+.tag-carne    { background: var(--accent-light); color: var(--accent-dark); }
+.tag-pollo    { background: var(--amber-bg); color: var(--amber-text); }
+.tag-verdura  { background: var(--green-bg); color: var(--green-text); }
+.tag-pasta    { background: var(--purple-bg); color: var(--purple-text); }
+.tag-huevo    { background: #fef9e6; color: #7a6212; }
+.tag-pescado  { background: var(--teal-bg); color: var(--teal-text); }
+.tag-fiambre  { background: var(--rose-bg); color: var(--rose-text); }
+.tag-rapido   { background: var(--blue-bg); color: var(--blue-text); }
+.tag-medio    { background: var(--amber-bg); color: var(--amber-text); }
+.tag-lento    { background: #f1efe8; color: #5f5e5a; }
+.tag-simple   { background: var(--green-bg); color: var(--green-text); }
+.tag-intermedio { background: var(--amber-bg); color: var(--amber-text); }
+.tag-elaborado { background: var(--purple-bg); color: var(--purple-text); }
+.tag-barato   { background: var(--green-bg); color: var(--green-text); }
+.tag-medio2   { background: var(--blue-bg); color: var(--blue-text); }
+.tag-caro     { background: var(--rose-bg); color: var(--rose-text); }
+.desc { font-size: 0.875rem; color: var(--text-secondary); line-height: 1.55; }
