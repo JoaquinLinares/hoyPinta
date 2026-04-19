@@ -11,13 +11,15 @@ export default defineConfig({
         enabled: true
       },
       manifest: {
+        id: '/',
         name: 'Hoy Pinta',
         short_name: 'HoyPinta',
         description: 'Qué comemos hoy',
         theme_color: '#ffffff',
         background_color: '#ffffff',
         display: 'standalone',
-        start_url: '/',
+        start_url: '.',
+        scope: '.',
         icons: [
           {
             src: '/icon-192.png',
